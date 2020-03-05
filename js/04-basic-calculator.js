@@ -1,30 +1,30 @@
-let x = parseFloat(prompt("Enter any number"));
-let y = parseFloat(prompt("Enter another number"));
-let z;
+let num1 = parseFloat(prompt("Enter any number"));
+let num2 = parseFloat(prompt("Enter another number"));
+let operation;
 while(true) {
-    z = prompt("Enter what operation would you like to perform - add, subtract, multiply, divide?");
-    if (z === "add" || z === "subtract" || z === "multiply" || z === "divide") {
+    operation = prompt("Enter what operation would you like to perform - add, subtract, multiply, divide?");
+    if (operation === "add" || operation === "subtract" || operation === "multiply" || operation === "divide") {
         break;
     }
 }
 function calculate(x, y, z) {
     switch (z) {
         case "add":
-            let sum = x + y;
-            window.document.write("The sum of " + x + " and " + y + " equals " + sum + ".");
+            operation = num1 + num2;
+            window.document.write("The sum of " + num1 + " and " + num2 + " equals " + operation + ".");
             break;
         case "subtract":
-            let sub = x - y;
-            window.document.write("The difference between " + x + " and " + y + " equals " + sub + ".");
+            operation = num1 - num2;
+            window.document.write("The difference between " + num1 + " and " + num2 + " equals " + operation + ".");
             break;
         case "multiply":
-            let mult = x * y;
-            window.document.write("The result of " + x + " * " + y + " equals " + mult + ".");
+            operation = x * y;
+            window.document.write("The result of " + num1 + " * " + num2 + " equals " + operation + ".");
             break;
         case "divide":
-            let divis = x / y;
-            window.document.write("The result of " + x + " / " + y + " equals " + divis + ".");
+            operation = x / y;
+            window.document.write("The result of " + num1 + " / " + num2 + " equals " + operation + ".");
             break;
     }
 }
-calculate(x, y, z);
+calculate(num1, num2, operation);
