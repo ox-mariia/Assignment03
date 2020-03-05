@@ -18,11 +18,11 @@ function calculate(x, y, z) {
             window.document.write("The difference between " + num1 + " and " + num2 + " equals " + operation + ".");
             break;
         case "multiply":
-            operation = x * y;
+            operation = num1 * num2;
             window.document.write("The result of " + num1 + " * " + num2 + " equals " + operation + ".");
             break;
         case "divide":
-            operation = x / y;
+            operation = num1 / num2;
             window.document.write("The result of " + num1 + " / " + num2 + " equals " + operation + ".");
             break;
     }
